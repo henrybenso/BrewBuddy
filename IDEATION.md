@@ -1,8 +1,11 @@
 # Ideation
 
-## Name Ideas
+### Name Ideas
+- ***Brewery near you***
+- *Movie/Music rec*
 
-Brewery near you
+### API
+Our API of choice will be [Open Brewery DB](https://www.openbrewerydb.org/)
 
 ### 1. Which audiences did you consider, and which one did you settle on for your app?
 
