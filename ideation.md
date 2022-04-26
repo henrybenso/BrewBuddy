@@ -1,7 +1,7 @@
 # Ideation - Preliminary Ideation Results
 
 ### Name Ideas
-- ***Brewery Budy***
+- ***Brewery Buddy***
 - *Movie/Music rec*
 
 ### API
