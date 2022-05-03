@@ -12,14 +12,11 @@ struct BreweryListRow: View {
 
     var body: some View {
         HStack {
-            //brewery.image
-                //.resizable()
-                //.frame(width: 50, height: 50)
             Text(result.name)
 
             Spacer()
             
-            //Text(result.)
+            Text(result.brewery_type)
             /*
             if brewery.isFavorite {
                 Image(systemName: "star.fill")
@@ -30,8 +27,9 @@ struct BreweryListRow: View {
     }
 }
 
+// Strings in Preview may be random. Just filled in with words so no errors pop up.
 struct BreweryListRow_Previews: PreviewProvider {
     static var previews: some View {
-        BreweryListRow(result: Brewery(id: "banjo-brewing-fayetteville", name: "Banjo Brewing", state: "West Virginia", brewery_type: "", street: "", address_2: "", address_3: "", city: "", postal_code: "", country: ""))
+        BreweryListRow(result: Brewery(id: "banjo-brewing-fayetteville", name: "Banjo Brewing", brewery_type: "planning", street: "", address_2: "", address_3: "", city: "", state: "", county_province: "", postal_code: "", country: "test test"))
     }
 }

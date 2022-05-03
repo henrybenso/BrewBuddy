@@ -8,6 +8,7 @@
 import SwiftUI
 import MapKit
 
+// This is meant to show a map of your location and nearby breweries. If you already have a view for this, go ahead and delete it.
 struct NearbyBreweryMap: View { // MAP VIEW
     
     //var result: Brewery

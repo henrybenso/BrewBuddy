@@ -16,7 +16,7 @@ struct BreweryListView: View {
     @State var errorOccurred = false
     @State var results: [Brewery] = []
     
-    @State private var showFavoritesOnly = false
+    @State private var showFavoritesOnly = false // FAVORITE ONLY BUTTON DOES NOT WORK RN. NEED FIREBASE TO STORE WHICH ARE FAVORITES
     
     /*
     var filteredBreweries: [Brewery] {

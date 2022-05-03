@@ -15,8 +15,6 @@ enum BREWERYAPIError: Error {
 }
 
 
-//COMMENTED OUT FOR PREVIEW PURPOSES
-/*
 func getListBreweries() async throws -> [Brewery] {
     guard let url = URL(string: "\(BREWERY_ENDPOINT)") else {
         fatalError("getListBreweries request error")
@@ -46,4 +44,3 @@ func getListBreweriesByDistance(longitude: String, latitude: String) async throw
     }
     
 }
-*/
