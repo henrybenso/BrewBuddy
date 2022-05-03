@@ -20,6 +20,11 @@
 		02EBB7C62820B83B00885C79 /* BrewBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBB7C52820B83B00885C79 /* BrewBuddyUITests.swift */; };
 		02EBB7C82820B83B00885C79 /* BrewBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBB7C72820B83B00885C79 /* BrewBuddyUITestsLaunchTests.swift */; };
 		02EBB7D92820B89000885C79 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBB7D82820B89000885C79 /* Brewery.swift */; };
+		B867DBF72820FE69000743BF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B867DBF62820FE69000743BF /* FirebaseAuth */; };
+		B867DBF92820FE69000743BF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B867DBF82820FE69000743BF /* FirebaseFirestore */; };
+		B867DBFB2820FEDB000743BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B867DBFA2820FEDB000743BF /* GoogleService-Info.plist */; };
+		B867DBFE2820FFBB000743BF /* FirebaseAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = B867DBFD2820FFBB000743BF /* FirebaseAuthUI */; };
+		B867DC002820FFBB000743BF /* FirebaseEmailAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = B867DBFF2820FFBB000743BF /* FirebaseEmailAuthUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,7 @@
 		02EBB7C52820B83B00885C79 /* BrewBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewBuddyUITests.swift; sourceTree = "<group>"; };
 		02EBB7C72820B83B00885C79 /* BrewBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		02EBB7D82820B89000885C79 /* Brewery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
+		B867DBFA2820FEDB000743BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B867DC002820FFBB000743BF /* FirebaseEmailAuthUI in Frameworks */,
+				B867DBF72820FE69000743BF /* FirebaseAuth in Frameworks */,
+				B867DBFE2820FFBB000743BF /* FirebaseAuthUI in Frameworks */,
+				B867DBF92820FE69000743BF /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +122,7 @@
 		02EBB79E2820B83A00885C79 = {
 			isa = PBXGroup;
 			children = (
+				B867DBFA2820FEDB000743BF /* GoogleService-Info.plist */,
 				02EBB7A92820B83A00885C79 /* BrewBuddy */,
 				02EBB7BA2820B83B00885C79 /* BrewBuddyTests */,
 				02EBB7C42820B83B00885C79 /* BrewBuddyUITests */,
@@ -193,6 +204,12 @@
 			dependencies = (
 			);
 			name = BrewBuddy;
+			packageProductDependencies = (
+				B867DBF62820FE69000743BF /* FirebaseAuth */,
+				B867DBF82820FE69000743BF /* FirebaseFirestore */,
+				B867DBFD2820FFBB000743BF /* FirebaseAuthUI */,
+				B867DBFF2820FFBB000743BF /* FirebaseEmailAuthUI */,
+			);
 			productName = BrewBuddy;
 			productReference = 02EBB7A72820B83A00885C79 /* BrewBuddy.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +282,10 @@
 				Base,
 			);
 			mainGroup = 02EBB79E2820B83A00885C79;
+			packageReferences = (
+				B867DBF52820FE69000743BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B867DBFC2820FFBB000743BF /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */,
+			);
 			productRefGroup = 02EBB7A82820B83A00885C79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,6 +304,7 @@
 			files = (
 				02EBB7B22820B83B00885C79 /* Preview Assets.xcassets in Resources */,
 				02EBB7AF2820B83B00885C79 /* Assets.xcassets in Resources */,
+				B867DBFB2820FEDB000743BF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +661,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B867DBF52820FE69000743BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.10.0;
+			};
+		};
+		B867DBFC2820FFBB000743BF /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/FirebaseUI-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B867DBF62820FE69000743BF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B867DBF52820FE69000743BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B867DBF82820FE69000743BF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B867DBF52820FE69000743BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		B867DBFD2820FFBB000743BF /* FirebaseAuthUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B867DBFC2820FFBB000743BF /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
+			productName = FirebaseAuthUI;
+		};
+		B867DBFF2820FFBB000743BF /* FirebaseEmailAuthUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B867DBFC2820FFBB000743BF /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
+			productName = FirebaseEmailAuthUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02EBB79F2820B83A00885C79 /* Project object */;
 }
