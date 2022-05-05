@@ -26,6 +26,7 @@
 		029256DC282400820086E82C /* Brewery2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256DB282400820086E82C /* Brewery2.swift */; };
 		029256DE282400C10086E82C /* BreweryListRow2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256DD282400C10086E82C /* BreweryListRow2.swift */; };
 		029256E0282401240086E82C /* BreweryDetailView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256DF282401240086E82C /* BreweryDetailView2.swift */; };
+		029256E3282415E70086E82C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029256E2282415E70086E82C /* Launch Screen.storyboard */; };
 		02EBB7AB2820B83A00885C79 /* BrewBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBB7AA2820B83A00885C79 /* BrewBuddyApp.swift */; };
 		02EBB7AD2820B83A00885C79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBB7AC2820B83A00885C79 /* ContentView.swift */; };
 		02EBB7AF2820B83B00885C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EBB7AE2820B83B00885C79 /* Assets.xcassets */; };
@@ -70,6 +71,8 @@
 		029256DB282400820086E82C /* Brewery2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery2.swift; sourceTree = "<group>"; };
 		029256DD282400C10086E82C /* BreweryListRow2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryListRow2.swift; sourceTree = "<group>"; };
 		029256DF282401240086E82C /* BreweryDetailView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDetailView2.swift; sourceTree = "<group>"; };
+		029256E1282415870086E82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		029256E2282415E70086E82C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		02EBB7A72820B83A00885C79 /* BrewBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrewBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EBB7AA2820B83A00885C79 /* BrewBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewBuddyApp.swift; sourceTree = "<group>"; };
 		02EBB7AC2820B83A00885C79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +152,7 @@
 		02EBB79E2820B83A00885C79 = {
 			isa = PBXGroup;
 			children = (
+				029256E2282415E70086E82C /* Launch Screen.storyboard */,
 				B867DBFA2820FEDB000743BF /* GoogleService-Info.plist */,
 				02EBB7A92820B83A00885C79 /* BrewBuddy */,
 				02EBB7BA2820B83B00885C79 /* BrewBuddyTests */,
@@ -170,6 +174,7 @@
 		02EBB7A92820B83A00885C79 /* BrewBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				029256E1282415870086E82C /* Info.plist */,
 				026A50822820BA86000F4FD6 /* API */,
 				026A50842820BA94000F4FD6 /* View */,
 				026A50832820BA8C000F4FD6 /* Helpers */,
@@ -334,6 +339,7 @@
 			files = (
 				02EBB7B22820B83B00885C79 /* Preview Assets.xcassets in Resources */,
 				02EBB7AF2820B83B00885C79 /* Assets.xcassets in Resources */,
+				029256E3282415E70086E82C /* Launch Screen.storyboard in Resources */,
 				B867DBFB2820FEDB000743BF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +544,7 @@
 				DEVELOPMENT_TEAM = 89V7K92VYR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrewBuddy/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "BrewBuddy needs your location to find breweries near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -568,6 +575,7 @@
 				DEVELOPMENT_TEAM = 89V7K92VYR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrewBuddy/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "BrewBuddy needs your location to find breweries near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
