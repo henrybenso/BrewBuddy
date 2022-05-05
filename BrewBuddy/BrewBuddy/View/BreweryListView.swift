@@ -6,25 +6,17 @@
 //
 
 import SwiftUI
+//import CoreLocation
+//import MapKit
+//import CoreLocation
+
 
 struct BreweryListView: View {
-    
-    //@Published var CLLocation
-    
     
     @State var loading = false
     @State var errorOccurred = false
     @State var results: [Brewery] = []
     
-    @State private var showFavoritesOnly = false // FAVORITE ONLY BUTTON DOES NOT WORK RN. NEED FIREBASE TO STORE WHICH ARE FAVORITES
-    
-    /*
-    var filteredBreweries: [Brewery] {
-        modelData.breweries.filter { brewery in
-            (!showFavoritesOnly || brewery.isFavorite)
-        }
-    }
-    */
     
     var body: some View {
         NavigationView {
@@ -32,13 +24,9 @@ struct BreweryListView: View {
                 if loading {
                     ProgressView()
                 } else if errorOccurred {
-                    Text("Something happened, try again.")
+                    Text("Something went wrong... we wish we can say more")
                 } else {
                     List {
-                        Toggle(isOn: $showFavoritesOnly) {
-                            Text("Favorites only")
-                        }
-
                         ForEach(results) { brewery in
                             NavigationLink {
                                 BreweryDetailView(result: brewery)
@@ -47,10 +35,10 @@ struct BreweryListView: View {
                             }
                         }
                     }
-                    .navigationTitle("Breweries")
+                    .navigationBarTitle("All Breweries")
                 }
             }
-        }
+        }//.navigationBarTitle("All Breweries")
         .task() {
             await getData()
         }
@@ -65,16 +53,12 @@ struct BreweryListView: View {
             print("api call works")
             results = temp
         } catch {
-        errorOccurred = true
+            errorOccurred = true
             debugPrint("Unexpected error: \(error)")
         }
         
         loading = false
-        
     }
-    
-    //Button(action: <#T##() -> Void#>, label: "Breweries Near Me")
-    
 }
 
 struct BreweryListView_Previews: PreviewProvider {

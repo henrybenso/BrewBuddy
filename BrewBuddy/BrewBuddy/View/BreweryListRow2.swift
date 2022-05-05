@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct BreweryListRow: View {
-    var result: Brewery
+struct BreweryListRow2: View {
+    var result: Brewery2
 
     var body: some View {
         HStack {
@@ -30,8 +30,8 @@ struct BreweryListRow: View {
 }
 
 // Strings in Preview may be random. Just filled in with words so no errors pop up.
-struct BreweryListRow_Previews: PreviewProvider {
+struct BreweryListRow2_Previews: PreviewProvider {
     static var previews: some View {
-        BreweryListRow(result: Brewery(id: "banjo-brewing-fayetteville", name: "Banjo Brewing", brewery_type: "planning", street: "", address_2: "", address_3: "", city: "", state: "", county_province: "", postal_code: "", country: "test test"))
+        BreweryListRow2(result: Brewery2(id: "banjo-brewing-fayetteville", name: "Banjo Brewing", brewery_type: "planning", street: "", address_2: "", address_3: "", city: "", state: "", county_province: "", postal_code: "", country: "test test"))
     }
 }

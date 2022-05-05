@@ -12,6 +12,20 @@
 		026A508A2820BAE9000F4FD6 /* BreweryListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A50892820BAE9000F4FD6 /* BreweryListRow.swift */; };
 		026A508C2820BAFE000F4FD6 /* BreweryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A508B2820BAFE000F4FD6 /* BreweryDetailView.swift */; };
 		026A508E2820BB1C000F4FD6 /* NearbyBreweryMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A508D2820BB1C000F4FD6 /* NearbyBreweryMap.swift */; };
+		027ABC142823338100358B4B /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ABC132823338100358B4B /* RequestLocationView.swift */; };
+		027ABC16282334F000358B4B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ABC15282334F000358B4B /* ErrorView.swift */; };
+		027ABC1A28233F9500358B4B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ABC1928233F9500358B4B /* ListViewModel.swift */; };
+		027ABC202823815500358B4B /* BreweryCustomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ABC1F2823815500358B4B /* BreweryCustomListView.swift */; };
+		029256C72823AE1A0086E82C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 029256C62823AE1A0086E82C /* FirebaseAuth */; };
+		029256C92823AE1A0086E82C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 029256C82823AE1A0086E82C /* FirebaseFirestore */; };
+		029256CC2823AE610086E82C /* FirebaseAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = 029256CB2823AE610086E82C /* FirebaseAuthUI */; };
+		029256CE2823AE610086E82C /* FirebaseEmailAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = 029256CD2823AE610086E82C /* FirebaseEmailAuthUI */; };
+		029256D02823D3570086E82C /* BannerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256CF2823D3570086E82C /* BannerImage.swift */; };
+		029256D42823F4FD0086E82C /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256D32823F4FD0086E82C /* Tabs.swift */; };
+		029256D62823FBCC0086E82C /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256D52823FBCC0086E82C /* SuccessView.swift */; };
+		029256DC282400820086E82C /* Brewery2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256DB282400820086E82C /* Brewery2.swift */; };
+		029256DE282400C10086E82C /* BreweryListRow2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256DD282400C10086E82C /* BreweryListRow2.swift */; };
+		029256E0282401240086E82C /* BreweryDetailView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256DF282401240086E82C /* BreweryDetailView2.swift */; };
 		02EBB7AB2820B83A00885C79 /* BrewBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBB7AA2820B83A00885C79 /* BrewBuddyApp.swift */; };
 		02EBB7AD2820B83A00885C79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBB7AC2820B83A00885C79 /* ContentView.swift */; };
 		02EBB7AF2820B83B00885C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EBB7AE2820B83B00885C79 /* Assets.xcassets */; };
@@ -20,11 +34,7 @@
 		02EBB7C62820B83B00885C79 /* BrewBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBB7C52820B83B00885C79 /* BrewBuddyUITests.swift */; };
 		02EBB7C82820B83B00885C79 /* BrewBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBB7C72820B83B00885C79 /* BrewBuddyUITestsLaunchTests.swift */; };
 		02EBB7D92820B89000885C79 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBB7D82820B89000885C79 /* Brewery.swift */; };
-		B867DBF72820FE69000743BF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B867DBF62820FE69000743BF /* FirebaseAuth */; };
-		B867DBF92820FE69000743BF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B867DBF82820FE69000743BF /* FirebaseFirestore */; };
 		B867DBFB2820FEDB000743BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B867DBFA2820FEDB000743BF /* GoogleService-Info.plist */; };
-		B867DBFE2820FFBB000743BF /* FirebaseAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = B867DBFD2820FFBB000743BF /* FirebaseAuthUI */; };
-		B867DC002820FFBB000743BF /* FirebaseEmailAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = B867DBFF2820FFBB000743BF /* FirebaseEmailAuthUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +60,16 @@
 		026A50892820BAE9000F4FD6 /* BreweryListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryListRow.swift; sourceTree = "<group>"; };
 		026A508B2820BAFE000F4FD6 /* BreweryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDetailView.swift; sourceTree = "<group>"; };
 		026A508D2820BB1C000F4FD6 /* NearbyBreweryMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyBreweryMap.swift; sourceTree = "<group>"; };
+		027ABC132823338100358B4B /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
+		027ABC15282334F000358B4B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		027ABC1928233F9500358B4B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		027ABC1F2823815500358B4B /* BreweryCustomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryCustomListView.swift; sourceTree = "<group>"; };
+		029256CF2823D3570086E82C /* BannerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerImage.swift; sourceTree = "<group>"; };
+		029256D32823F4FD0086E82C /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		029256D52823FBCC0086E82C /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		029256DB282400820086E82C /* Brewery2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery2.swift; sourceTree = "<group>"; };
+		029256DD282400C10086E82C /* BreweryListRow2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryListRow2.swift; sourceTree = "<group>"; };
+		029256DF282401240086E82C /* BreweryDetailView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDetailView2.swift; sourceTree = "<group>"; };
 		02EBB7A72820B83A00885C79 /* BrewBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrewBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EBB7AA2820B83A00885C79 /* BrewBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewBuddyApp.swift; sourceTree = "<group>"; };
 		02EBB7AC2820B83A00885C79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,10 +89,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B867DC002820FFBB000743BF /* FirebaseEmailAuthUI in Frameworks */,
-				B867DBF72820FE69000743BF /* FirebaseAuth in Frameworks */,
-				B867DBFE2820FFBB000743BF /* FirebaseAuthUI in Frameworks */,
-				B867DBF92820FE69000743BF /* FirebaseFirestore in Frameworks */,
+				029256CE2823AE610086E82C /* FirebaseEmailAuthUI in Frameworks */,
+				029256C72823AE1A0086E82C /* FirebaseAuth in Frameworks */,
+				029256CC2823AE610086E82C /* FirebaseAuthUI in Frameworks */,
+				029256C92823AE1A0086E82C /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				026A508D2820BB1C000F4FD6 /* NearbyBreweryMap.swift */,
+				027ABC132823338100358B4B /* RequestLocationView.swift */,
+				029256D52823FBCC0086E82C /* SuccessView.swift */,
+				027ABC15282334F000358B4B /* ErrorView.swift */,
+				029256CF2823D3570086E82C /* BannerImage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -113,8 +137,11 @@
 			isa = PBXGroup;
 			children = (
 				026A50872820BADA000F4FD6 /* BreweryListView.swift */,
+				027ABC1F2823815500358B4B /* BreweryCustomListView.swift */,
 				026A50892820BAE9000F4FD6 /* BreweryListRow.swift */,
+				029256DD282400C10086E82C /* BreweryListRow2.swift */,
 				026A508B2820BAFE000F4FD6 /* BreweryDetailView.swift */,
+				029256DF282401240086E82C /* BreweryDetailView2.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +175,7 @@
 				026A50832820BA8C000F4FD6 /* Helpers */,
 				02EBB7D72820B87300885C79 /* Model */,
 				02EBB7AA2820B83A00885C79 /* BrewBuddyApp.swift */,
+				029256D32823F4FD0086E82C /* Tabs.swift */,
 				02EBB7AC2820B83A00885C79 /* ContentView.swift */,
 				02EBB7AE2820B83B00885C79 /* Assets.xcassets */,
 				02EBB7B02820B83B00885C79 /* Preview Content */,
@@ -184,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				02EBB7D82820B89000885C79 /* Brewery.swift */,
+				029256DB282400820086E82C /* Brewery2.swift */,
+				027ABC1928233F9500358B4B /* ListViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,10 +235,10 @@
 			);
 			name = BrewBuddy;
 			packageProductDependencies = (
-				B867DBF62820FE69000743BF /* FirebaseAuth */,
-				B867DBF82820FE69000743BF /* FirebaseFirestore */,
-				B867DBFD2820FFBB000743BF /* FirebaseAuthUI */,
-				B867DBFF2820FFBB000743BF /* FirebaseEmailAuthUI */,
+				029256C62823AE1A0086E82C /* FirebaseAuth */,
+				029256C82823AE1A0086E82C /* FirebaseFirestore */,
+				029256CB2823AE610086E82C /* FirebaseAuthUI */,
+				029256CD2823AE610086E82C /* FirebaseEmailAuthUI */,
 			);
 			productName = BrewBuddy;
 			productReference = 02EBB7A72820B83A00885C79 /* BrewBuddy.app */;
@@ -283,8 +313,8 @@
 			);
 			mainGroup = 02EBB79E2820B83A00885C79;
 			packageReferences = (
-				B867DBF52820FE69000743BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				B867DBFC2820FFBB000743BF /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */,
+				029256C52823AE1A0086E82C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				029256CA2823AE610086E82C /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */,
 			);
 			productRefGroup = 02EBB7A82820B83A00885C79 /* Products */;
 			projectDirPath = "";
@@ -330,13 +360,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				026A508E2820BB1C000F4FD6 /* NearbyBreweryMap.swift in Sources */,
+				029256DC282400820086E82C /* Brewery2.swift in Sources */,
 				02EBB7AD2820B83A00885C79 /* ContentView.swift in Sources */,
+				029256D62823FBCC0086E82C /* SuccessView.swift in Sources */,
+				027ABC1A28233F9500358B4B /* ListViewModel.swift in Sources */,
 				026A508C2820BAFE000F4FD6 /* BreweryDetailView.swift in Sources */,
+				029256D42823F4FD0086E82C /* Tabs.swift in Sources */,
+				029256D02823D3570086E82C /* BannerImage.swift in Sources */,
+				027ABC142823338100358B4B /* RequestLocationView.swift in Sources */,
+				027ABC202823815500358B4B /* BreweryCustomListView.swift in Sources */,
 				026A50882820BADA000F4FD6 /* BreweryListView.swift in Sources */,
+				027ABC16282334F000358B4B /* ErrorView.swift in Sources */,
 				026A50862820BAC5000F4FD6 /* BreweryAPI.swift in Sources */,
 				026A508A2820BAE9000F4FD6 /* BreweryListRow.swift in Sources */,
 				02EBB7D92820B89000885C79 /* Brewery.swift in Sources */,
+				029256DE282400C10086E82C /* BreweryListRow2.swift in Sources */,
 				02EBB7AB2820B83A00885C79 /* BrewBuddyApp.swift in Sources */,
+				029256E0282401240086E82C /* BreweryDetailView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +538,7 @@
 				DEVELOPMENT_TEAM = 89V7K92VYR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "BrewBuddy needs your location to find breweries near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -527,6 +568,7 @@
 				DEVELOPMENT_TEAM = 89V7K92VYR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "BrewBuddy needs your location to find breweries near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -663,7 +705,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B867DBF52820FE69000743BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		029256C52823AE1A0086E82C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -671,9 +713,9 @@
 				minimumVersion = 8.10.0;
 			};
 		};
-		B867DBFC2820FFBB000743BF /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */ = {
+		029256CA2823AE610086E82C /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/FirebaseUI-iOS.git";
+			repositoryURL = "https://github.com/firebase/FirebaseUI-iOS";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 12.1.1;
@@ -682,24 +724,24 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B867DBF62820FE69000743BF /* FirebaseAuth */ = {
+		029256C62823AE1A0086E82C /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B867DBF52820FE69000743BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 029256C52823AE1A0086E82C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		B867DBF82820FE69000743BF /* FirebaseFirestore */ = {
+		029256C82823AE1A0086E82C /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B867DBF52820FE69000743BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 029256C52823AE1A0086E82C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
 		};
-		B867DBFD2820FFBB000743BF /* FirebaseAuthUI */ = {
+		029256CB2823AE610086E82C /* FirebaseAuthUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B867DBFC2820FFBB000743BF /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
+			package = 029256CA2823AE610086E82C /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
 			productName = FirebaseAuthUI;
 		};
-		B867DBFF2820FFBB000743BF /* FirebaseEmailAuthUI */ = {
+		029256CD2823AE610086E82C /* FirebaseEmailAuthUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B867DBFC2820FFBB000743BF /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
+			package = 029256CA2823AE610086E82C /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
 			productName = FirebaseEmailAuthUI;
 		};
 /* End XCSwiftPackageProductDependency section */

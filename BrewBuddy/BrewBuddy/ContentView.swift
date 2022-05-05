@@ -9,9 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        BreweryListView()
-        //Text("Hello, world!")
-          //  .padding()
+        //BreweryCustomListView()
+        //BreweryListView()
+        //TestView()
+        Tabs()
     }
 }
 

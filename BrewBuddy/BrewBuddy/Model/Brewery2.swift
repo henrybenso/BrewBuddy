@@ -1,15 +1,14 @@
 //
-//  Brewery.swift
+//  Brewery2.swift
 //  BrewBuddy
 //
-//  Created by henry benso on 4/25/22.
+//  Created by henry benso on 5/5/22.
 //
 
 import Foundation
-
 import CoreLocation
 
-struct Brewery: Hashable, Codable, Identifiable {
+struct Brewery2: Hashable, Codable, Identifiable {
     var id: String
     var name: String
     var brewery_type: String
@@ -17,7 +16,7 @@ struct Brewery: Hashable, Codable, Identifiable {
     var address_2: String?
     var address_3: String?
     var city: String
-    var state: String
+    var state: String?
     var county_province: String?
     var postal_code: String
     var country: String
@@ -42,8 +41,8 @@ struct Brewery: Hashable, Codable, Identifiable {
     */
 }
 
-struct BreweryResults: Hashable, Codable {
-    var results: [Brewery]
+struct BreweryResults2: Hashable, Codable {
+    var results: [Brewery2]
     //var results2: [Brewery]
 }
 

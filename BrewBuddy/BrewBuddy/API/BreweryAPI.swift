@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 let OPENBREWERY_API_ROOT = "https://api.openbrewerydb.org"
 let BREWERY_ENDPOINT = "\(OPENBREWERY_API_ROOT)/breweries" // https://api.openbrewerydb.org/breweries/search?query=dog
 
@@ -30,14 +31,14 @@ func getListBreweries() async throws -> [Brewery] {
 }
 
 
-func getListBreweriesByDistance(longitude: String, latitude: String) async throws -> [Brewery] {
-    guard let url = URL(string: "\(BREWERY_ENDPOINT)") else {
+func getListBreweriesByDistance(latitude: String, longitude: String) async throws -> [Brewery2] {
+    guard let url = URL(string: "\(BREWERY_ENDPOINT)?by_dist=\(latitude),\(longitude)") else {
         fatalError("getListBreweriesByDistance request error")
     }
     
     do {
         let (data, _)  = try await URLSession.shared.data(from: url)
-        return try JSONDecoder().decode([Brewery].self, from: data)
+        return try JSONDecoder().decode([Brewery2].self, from: data)
     } catch {
         print(error)
         fatalError("error")
