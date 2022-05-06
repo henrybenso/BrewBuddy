@@ -28,7 +28,7 @@ struct BreweryDetailView: View {
                         .font(.title3)
                     Spacer()
 
-                    Text("\(result.street ?? "null") ") + Text("\(result.address_2 ?? "null") ") + Text("\(result.address_3 ?? "null") ")
+                    Text("\(result.street ?? "null") ") + Text("\(result.address_2 ?? "") ") + Text("\(result.address_3 ?? "") ")
                     Text("\(result.city ?? "null"), ") + Text(result.county_province ?? "null")
                     Text("\(result.state ?? "null") ") + Text(result.postal_code ?? "null")
                     Text(result.country)
