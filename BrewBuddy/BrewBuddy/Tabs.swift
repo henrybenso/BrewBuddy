@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct Tabs: View {
+    @EnvironmentObject var auth: BrewBuddyAuth
+    @State var requestLogin = false
+    
     var body: some View {
         TabView {
-            BreweryListView()
+            BreweryListView(requestLogin: $requestLogin)
                 .tabItem {
                     Label("All", systemImage: "globe")
                 }
@@ -25,6 +28,6 @@ struct Tabs: View {
 
 struct Tabs_Previews: PreviewProvider {
     static var previews: some View {
-        Tabs()
+        Tabs().environmentObject(BrewBuddyAuth())
     }
 }

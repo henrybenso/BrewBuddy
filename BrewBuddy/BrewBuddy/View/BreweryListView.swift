@@ -12,6 +12,9 @@ import SwiftUI
 
 
 struct BreweryListView: View {
+    @EnvironmentObject var auth: BrewBuddyAuth
+    
+    @Binding var requestLogin: Bool
     
     @State var loading = false
     @State var errorOccurred = false
@@ -36,6 +39,23 @@ struct BreweryListView: View {
                         }
                     }
                     .navigationBarTitle("All Breweries")
+                    .toolbar {
+                        ToolbarItemGroup(placement: .navigationBarTrailing) {
+                            if auth.user != nil {
+                                Button("Sign out") {
+                                    do {
+                                        try auth.signOut()
+                                    } catch {
+                                        // blah catch error here
+                                    }
+                                }
+                            } else {
+                                Button("Sign in") {
+                                    requestLogin = true
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }//.navigationBarTitle("All Breweries")
@@ -62,7 +82,9 @@ struct BreweryListView: View {
 }
 
 struct BreweryListView_Previews: PreviewProvider {
+    @State static var requestLogin = false
     static var previews: some View {
-        BreweryListView()
+        BreweryListView(requestLogin: $requestLogin)
+            .environmentObject(BrewBuddyAuth())
     }
 }
