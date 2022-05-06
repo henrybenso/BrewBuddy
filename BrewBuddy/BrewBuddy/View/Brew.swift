@@ -26,6 +26,17 @@ struct Brew: View {
                     .padding()
             }
         }
+        TabView {
+            BreweryListView(requestLogin: $requestLogin)
+                .tabItem {
+                    Label("All", systemImage: "globe")
+                }
+            
+            BreweryCustomListView()
+                .tabItem {
+                    Label("Near me", systemImage: "shareplay")
+                }
+        }
     }
 }
 
