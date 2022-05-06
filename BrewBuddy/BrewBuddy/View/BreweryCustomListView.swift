@@ -9,12 +9,10 @@ import SwiftUI
 import CoreLocation
 
 struct BreweryCustomListView: View {
-    
-    //@Published var CLLocation
+
     @State var called = false
     @State private var showError: Bool = false
     @State var fetching = false
-    //@State var success: = false
     @State var loading2 = false
     @State var errorOccurred2 = false
     @State var nearByresults: [Brewery2] = []
@@ -55,9 +53,6 @@ struct BreweryCustomListView: View {
                     }
                     .navigationBarTitle("Breweries Near Me")
                     .toolbar {
-                        //ToolbarItem(placement: .principal) {
-                         //   Image("banner")
-                        //}
                         ToolbarItem(placement: .navigationBarTrailing) {
                             
                             if self.showError {
@@ -72,8 +67,6 @@ struct BreweryCustomListView: View {
                                         }
                                     
                                 } else if locationViewModel.authorizationStatus == .denied {
-                                    
-                                    //ErrorView(errorText: "The app does not have location permissions. Please enable them in settings.")
                                     ErrorView(errorText: "Location use is denied.")
                                         .frame( alignment: .top)
                                     
@@ -84,15 +77,6 @@ struct BreweryCustomListView: View {
                                         }
                                      
                                 } else if locationViewModel.authorizationStatus == .authorizedAlways || locationViewModel.authorizationStatus == .authorizedWhenInUse {
-                                    /*
-                                    NavigationLink(destination: BreweryCustomListView()) {
-                                        
-                                    }
-                                    */
-                                    //BreweryCustomListView()
-                                    
-                                        //.environmentObject(locationViewModel)
-                                    //success.toggle()
                                     SuccessView()
                                         .frame( alignment: .top)
                                     

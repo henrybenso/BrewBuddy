@@ -22,7 +22,6 @@ struct SuccessView: View {
         .padding(8)
         .foregroundColor(.white)
         .background(Color.green)
-        //.shadow(color: .black, radius: 5)
     }
 }
 

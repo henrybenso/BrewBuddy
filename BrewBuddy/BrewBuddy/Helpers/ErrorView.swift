@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct ErrorView: View {
-    //@Binding var restricted: Bool
-    //@Binding var denied: Bool
     var errorText: String
     
     @State private var textStyle = UIFont.TextStyle.body
@@ -29,12 +27,8 @@ struct ErrorView: View {
 }
 
 struct ErrorView_Previews: PreviewProvider {
-    //@State static var restricted = true
-   // @State static var denied = true
     
     static var previews: some View {
         ErrorView(errorText: "error")
-        //ErrorView(restricted: $restricted, denied: $denied)
-        //ErrorView(errorViewBool: $errorViewBool)
     }
 }

@@ -11,7 +11,6 @@
 		026A50882820BADA000F4FD6 /* BreweryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A50872820BADA000F4FD6 /* BreweryListView.swift */; };
 		026A508A2820BAE9000F4FD6 /* BreweryListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A50892820BAE9000F4FD6 /* BreweryListRow.swift */; };
 		026A508C2820BAFE000F4FD6 /* BreweryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A508B2820BAFE000F4FD6 /* BreweryDetailView.swift */; };
-		026A508E2820BB1C000F4FD6 /* NearbyBreweryMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A508D2820BB1C000F4FD6 /* NearbyBreweryMap.swift */; };
 		027ABC142823338100358B4B /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ABC132823338100358B4B /* RequestLocationView.swift */; };
 		027ABC16282334F000358B4B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ABC15282334F000358B4B /* ErrorView.swift */; };
 		027ABC1A28233F9500358B4B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ABC1928233F9500358B4B /* ListViewModel.swift */; };
@@ -67,7 +66,6 @@
 		026A50872820BADA000F4FD6 /* BreweryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryListView.swift; sourceTree = "<group>"; };
 		026A50892820BAE9000F4FD6 /* BreweryListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryListRow.swift; sourceTree = "<group>"; };
 		026A508B2820BAFE000F4FD6 /* BreweryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDetailView.swift; sourceTree = "<group>"; };
-		026A508D2820BB1C000F4FD6 /* NearbyBreweryMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyBreweryMap.swift; sourceTree = "<group>"; };
 		027ABC132823338100358B4B /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
 		027ABC15282334F000358B4B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		027ABC1928233F9500358B4B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 		026A50832820BA8C000F4FD6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				026A508D2820BB1C000F4FD6 /* NearbyBreweryMap.swift */,
 				027ABC132823338100358B4B /* RequestLocationView.swift */,
 				029256D52823FBCC0086E82C /* SuccessView.swift */,
 				027ABC15282334F000358B4B /* ErrorView.swift */,
@@ -403,7 +400,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				026A508E2820BB1C000F4FD6 /* NearbyBreweryMap.swift in Sources */,
 				029256DC282400820086E82C /* Brewery2.swift in Sources */,
 				02EBB7AD2820B83A00885C79 /* ContentView.swift in Sources */,
 				B807AC702824F75600601DCC /* Brew.swift in Sources */,

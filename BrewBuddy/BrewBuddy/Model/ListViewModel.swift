@@ -8,8 +8,6 @@
 import Foundation
 import CoreLocation
 import MapKit
-//import CoreLocation
-//import CoreLocationUI
 
 class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var authorizationStatus: CLAuthorizationStatus

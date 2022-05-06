@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 import CoreLocation
 
 struct Brewery: Hashable, Codable, Identifiable {
@@ -21,30 +20,14 @@ struct Brewery: Hashable, Codable, Identifiable {
     var county_province: String?
     var postal_code: String?
     var country: String
-    //var longitude: String
-    //var latitude: String
     var phone: String?
     var website_url: String?
      
     //var isFavorite: Bool
-    /*
-    private var coordinates: Coordinates
-    var locationCoordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(
-            latitude: coordinates.latitude,
-            longitude: coordinates.longitude)
-    }
-
-    struct Coordinates: Hashable, Codable {
-        var latitude: Double
-        var longitude: Double
-    }
-    */
 }
 
 struct BreweryResults: Hashable, Codable {
     var results: [Brewery]
-    //var results2: [Brewery]
 }
 
 

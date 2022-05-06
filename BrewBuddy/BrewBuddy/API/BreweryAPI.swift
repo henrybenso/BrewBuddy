@@ -9,7 +9,7 @@ import Foundation
 
 
 let OPENBREWERY_API_ROOT = "https://api.openbrewerydb.org"
-let BREWERY_ENDPOINT = "\(OPENBREWERY_API_ROOT)/breweries" // https://api.openbrewerydb.org/breweries/search?query=dog
+let BREWERY_ENDPOINT = "\(OPENBREWERY_API_ROOT)/breweries"
 
 enum BREWERYAPIError: Error {
     case unsuccessfulDecode
@@ -26,7 +26,7 @@ func getListBreweries() async throws -> [Brewery] {
         return try JSONDecoder().decode([Brewery].self, from: data)
     } catch {
         print(error)
-        fatalError("error")
+        fatalError("listBreweriesDecodeError")
     }
 }
 
@@ -41,7 +41,7 @@ func getListBreweriesByDistance(latitude: String, longitude: String) async throw
         return try JSONDecoder().decode([Brewery2].self, from: data)
     } catch {
         print(error)
-        fatalError("error")
+        fatalError("listBreweriesByDistanceDecodeError")
     }
     
 }
