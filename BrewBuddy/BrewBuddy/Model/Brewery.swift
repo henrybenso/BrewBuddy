@@ -16,10 +16,10 @@ struct Brewery: Hashable, Codable, Identifiable {
     var street: String?
     var address_2: String?
     var address_3: String?
-    var city: String
-    var state: String
+    var city: String?
+    var state: String?
     var county_province: String?
-    var postal_code: String
+    var postal_code: String?
     var country: String
     //var longitude: String
     //var latitude: String

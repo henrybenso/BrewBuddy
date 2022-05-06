@@ -16,11 +16,12 @@
 		027ABC16282334F000358B4B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ABC15282334F000358B4B /* ErrorView.swift */; };
 		027ABC1A28233F9500358B4B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ABC1928233F9500358B4B /* ListViewModel.swift */; };
 		027ABC202823815500358B4B /* BreweryCustomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027ABC1F2823815500358B4B /* BreweryCustomListView.swift */; };
+		027F751C282504FC00539171 /* FirebaseAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = 027F751B282504FC00539171 /* FirebaseAuthUI */; };
+		027F751E282504FC00539171 /* FirebaseEmailAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = 027F751D282504FC00539171 /* FirebaseEmailAuthUI */; };
 		029256C72823AE1A0086E82C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 029256C62823AE1A0086E82C /* FirebaseAuth */; };
 		029256C92823AE1A0086E82C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 029256C82823AE1A0086E82C /* FirebaseFirestore */; };
 		029256CC2823AE610086E82C /* FirebaseAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = 029256CB2823AE610086E82C /* FirebaseAuthUI */; };
 		029256CE2823AE610086E82C /* FirebaseEmailAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = 029256CD2823AE610086E82C /* FirebaseEmailAuthUI */; };
-		029256D02823D3570086E82C /* BannerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256CF2823D3570086E82C /* BannerImage.swift */; };
 		029256D42823F4FD0086E82C /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256D32823F4FD0086E82C /* Tabs.swift */; };
 		029256D62823FBCC0086E82C /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256D52823FBCC0086E82C /* SuccessView.swift */; };
 		029256DC282400820086E82C /* Brewery2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029256DB282400820086E82C /* Brewery2.swift */; };
@@ -71,7 +72,6 @@
 		027ABC15282334F000358B4B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		027ABC1928233F9500358B4B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		027ABC1F2823815500358B4B /* BreweryCustomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryCustomListView.swift; sourceTree = "<group>"; };
-		029256CF2823D3570086E82C /* BannerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerImage.swift; sourceTree = "<group>"; };
 		029256D32823F4FD0086E82C /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		029256D52823FBCC0086E82C /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		029256DB282400820086E82C /* Brewery2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery2.swift; sourceTree = "<group>"; };
@@ -104,9 +104,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B807AC6A2824E72E00601DCC /* FirebaseGoogleAuthUI in Frameworks */,
+				027F751C282504FC00539171 /* FirebaseAuthUI in Frameworks */,
 				029256CE2823AE610086E82C /* FirebaseEmailAuthUI in Frameworks */,
 				029256C72823AE1A0086E82C /* FirebaseAuth in Frameworks */,
 				029256CC2823AE610086E82C /* FirebaseAuthUI in Frameworks */,
+				027F751E282504FC00539171 /* FirebaseEmailAuthUI in Frameworks */,
 				029256C92823AE1A0086E82C /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +145,6 @@
 				027ABC132823338100358B4B /* RequestLocationView.swift */,
 				029256D52823FBCC0086E82C /* SuccessView.swift */,
 				027ABC15282334F000358B4B /* ErrorView.swift */,
-				029256CF2823D3570086E82C /* BannerImage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -278,6 +279,8 @@
 				029256CB2823AE610086E82C /* FirebaseAuthUI */,
 				029256CD2823AE610086E82C /* FirebaseEmailAuthUI */,
 				B807AC692824E72E00601DCC /* FirebaseGoogleAuthUI */,
+				027F751B282504FC00539171 /* FirebaseAuthUI */,
+				027F751D282504FC00539171 /* FirebaseEmailAuthUI */,
 			);
 			productName = BrewBuddy;
 			productReference = 02EBB7A72820B83A00885C79 /* BrewBuddy.app */;
@@ -354,6 +357,7 @@
 			packageReferences = (
 				029256C52823AE1A0086E82C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				029256CA2823AE610086E82C /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */,
+				027F751A282504FC00539171 /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */,
 			);
 			productRefGroup = 02EBB7A82820B83A00885C79 /* Products */;
 			projectDirPath = "";
@@ -407,7 +411,6 @@
 				027ABC1A28233F9500358B4B /* ListViewModel.swift in Sources */,
 				026A508C2820BAFE000F4FD6 /* BreweryDetailView.swift in Sources */,
 				029256D42823F4FD0086E82C /* Tabs.swift in Sources */,
-				029256D02823D3570086E82C /* BannerImage.swift in Sources */,
 				027ABC142823338100358B4B /* RequestLocationView.swift in Sources */,
 				027ABC202823815500358B4B /* BreweryCustomListView.swift in Sources */,
 				026A50882820BADA000F4FD6 /* BreweryListView.swift in Sources */,
@@ -754,6 +757,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		027F751A282504FC00539171 /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/FirebaseUI-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.1;
+			};
+		};
 		029256C52823AE1A0086E82C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -773,6 +784,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		027F751B282504FC00539171 /* FirebaseAuthUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029256CA2823AE610086E82C /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
+			productName = FirebaseAuthUI;
+		};
+		027F751D282504FC00539171 /* FirebaseEmailAuthUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029256CA2823AE610086E82C /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
+			productName = FirebaseEmailAuthUI;
+		};
 		029256C62823AE1A0086E82C /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 029256C52823AE1A0086E82C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
